@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Aura - Design de Interiores & Arquitetura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Studio Aura</h1>
+                </div>
+                <nav class="nav">
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#processo">Processo</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="src/assets/interior-dark-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="headline-xl">A Experiência</h2>
+            <p class="body-lg">Luxo discreto, precisão arquitetônica</p>
+            <button class="btn btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">
+                Conhecer Projetos
+            </button>
+        </div>
+    </section>
+
+    <section class="processo" id="processo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="headline-lg">O Método</h2>
+            </div>
+            
+            <div class="processo-video">
+                <video class="video-responsive" autoplay muted loop playsinline>
+                    <source src="src/assets/video-camadas.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="processo-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3 class="headline-sm">Concepção</h3>
+                    <p class="body-md">Imersão profunda no estilo de vida do cliente, entendendo seus desejos, hábitos e aspirações para criar um ambiente único e personalizado.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3 class="headline-sm">Detalhamento</h3>
+                    <p class="body-md">Desenhos técnicos de precisão e seleção exclusiva de materiais, garantindo que cada elemento está alinhado com a visão do cliente.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3 class="headline-sm">Execução</h3>
+                    <p class="body-md">Gerenciamento rigoroso de construção e coordenação artesanal, acompanhando cada detalhe até a perfeição final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="headline-lg">O Trabalho</h2>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="src/assets/projeto-1.png" alt="Projeto 1">
+                    <div class="gallery-overlay">
+                        <h3>Residência Minimalista</h3>
+                        <p>São Paulo, SP</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="src/assets/projeto-2.png" alt="Projeto 2">
+                    <div class="gallery-overlay">
+                        <h3>Apartamento Contemporâneo</h3>
+                        <p>São Paulo, SP</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="src/assets/projeto-3.png" alt="Projeto 3">
+                    <div class="gallery-overlay">
+                        <h3>Loft Industrial</h3>
+                        <p>São Paulo, SP</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="src/assets/projeto-4.png" alt="Projeto 4">
+                    <div class="gallery-overlay">
+                        <h3>Casa de Campo</h3>
+                        <p>Interior de SP</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="src/assets/projeto-5.png" alt="Projeto 5">
+                    <div class="gallery-overlay">
+                        <h3>Loja Conceito</h3>
+                        <p>São Paulo, SP</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="src/assets/projeto-6.png" alt="Projeto 6">
+                    <div class="gallery-overlay">
+                        <h3>Estúdio de Arte</h3>
+                        <p>São Paulo, SP</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="src/assets/projeto-7.png" alt="Projeto 7">
+                    <div class="gallery-overlay">
+                        <h3>Residência Luxo</h3>
+                        <p>São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-imagem">
+                    <img src="src/assets/marina.png" alt="Marina Vasconcelos">
+                </div>
+                <div class="sobre-texto">
+                    <h2 class="headline-lg">A Fundadora</h2>
+                    <p class="body-lg">Marina Vasconcelos é uma arquiteta e designer de interiores apaixonada por criar espaços que contam histórias. Com mais de 15 anos de experiência, ela combina precisão técnica com sensibilidade artística para transformar residências em obras de arte viva.</p>
+                    <p class="body-lg">Sua filosofia é simples: o design verdadeiro não grita, sussurra. Cada projeto é uma conversa contínua com o cliente, onde o espaço respira e evolui com quem o habita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="headline-lg">O Que Dizem</h2>
+            </div>
+
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <p class="body-md">"Marina transformou meu apartamento em um refúgio de paz. Cada detalhe foi pensado com cuidado extraordinário. A experiência foi impecável do início ao fim."</p>
+                    <div class="testimonio-autor">
+                        <strong>Carolina M.</strong>
+                        <span>Cliente Residencial</span>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <p class="body-md">"Profissionalismo extremo, atenção aos detalhes e criatividade sem limites. O resultado superou nossas expectativas. Recomendamos fortemente."</p>
+                    <div class="testimonio-autor">
+                        <strong>Ricardo L.</strong>
+                        <span>Cliente Corporativo</span>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <p class="body-md">"Marina não apenas desenha espaços, ela cria experiências. O projeto reflete exatamente nossa personalidade. Um trabalho verdadeiramente excepcional."</p>
+                    <div class="testimonio-autor">
+                        <strong>Patricia T.</strong>
+                        <span>Cliente Residencial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="headline-lg">Começar um Projeto</h2>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="label-caps">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="label-caps">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="label-caps">Telefone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group full-width">
+                    <label for="message" class="label-caps">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" title="Enviar WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Studio Aura</h3>
+                    <p>Design de Interiores & Arquitetura</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://pinterest.com" target="_blank">Pinterest</a>
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: hello@studioareura.com</p>
+                    <p>Tel: +55 (11) 9999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Studio Aura. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
